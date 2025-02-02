@@ -13,18 +13,24 @@ public class Health : MonoBehaviour
 
     void Start()
     {
-        currentHealth = maxHealth;
+        SetMaxHealth(maxHealth);
     }
 
     public float AddHealth(float health)
     {
         currentHealth = Mathf.Clamp(currentHealth + health, 0, maxHealth);
-        if(health <= 0) Destroy(gameObject);
-        return health;
+        if(currentHealth <= 0) Destroy(gameObject);
+        return currentHealth;
     }
 
     private void OnDestroy()
     {
         Die.Invoke();
+    }
+
+    public void SetMaxHealth(float health)
+    {
+        maxHealth = health;
+        currentHealth = health;
     }
 }

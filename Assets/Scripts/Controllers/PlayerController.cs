@@ -51,9 +51,9 @@ public class PlayerController : MonoBehaviour
         {
             //Get the point that is clicked
             Vector3 hitPoint = r.GetPoint(enter);
-            hitPoint = new Vector3(hitPoint.x, 0, hitPoint.z);
+            hitPoint = new Vector3(hitPoint.x, transform.position.y, hitPoint.z);
 
-            mover.RotateChildTowards(mesh, hitPoint * 1000);
+            mover.RotateChildTowards(mesh, hitPoint);
         }
     }
 }

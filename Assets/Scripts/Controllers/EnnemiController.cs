@@ -5,12 +5,25 @@ public class EnnemiController : MonoBehaviour
 {
     [SerializeField] float speed;
     [SerializeField] Transform mesh;
+    [SerializeField] EnemyData data;
+    Health health;
+    Damage damage;
     private Mover mover;
 
     // Start is called before the first frame update
     void Awake()
     {
         mover = GetComponent<Mover>();
+        health = GetComponent<Health>();
+        //damage = GetComponent<Damage>();
+        LoadFromData();
+    }
+
+    private void LoadFromData()
+    {
+        speed = data.speed;
+        health.SetMaxHealth(data.health);
+        //damage.SetDamage(data.damage);
     }
 
     // Update is called once per frame
