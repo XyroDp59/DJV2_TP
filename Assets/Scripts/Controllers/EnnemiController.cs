@@ -16,6 +16,9 @@ public class EnnemiController : MonoBehaviour
         mover = GetComponent<Mover>();
         health = GetComponent<Health>();
         //damage = GetComponent<Damage>();
+        Debug.Log(gameObject.name);
+        Debug.Assert(data != null);
+
         LoadFromData();
     }
 
