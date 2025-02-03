@@ -19,6 +19,7 @@ public class Health : MonoBehaviour
     public float AddHealth(float health)
     {
         currentHealth = Mathf.Clamp(currentHealth + health, 0, maxHealth);
+        Debug.Log(gameObject.name + " " + currentHealth);
         if(currentHealth <= 0) Destroy(gameObject);
         return currentHealth;
     }

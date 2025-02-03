@@ -121,6 +121,8 @@ GameObject:
   - component: {fileID: 7310568943784818705}
   - component: {fileID: 8442050229164057500}
   - component: {fileID: 1148243142025078595}
+  - component: {fileID: 8571963054993361669}
+  - component: {fileID: 7822401987229094605}
   m_Layer: 0
   m_Name: Ennemi
   m_TagString: Untagged
@@ -237,6 +239,42 @@ CapsuleCollider:
   m_Height: 2
   m_Direction: 1
   m_Center: {x: 0, y: 1, z: 0}
+--- !u!114 &8571963054993361669
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3786935926152654625}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fd5895a37ea485f4a9497937d4da9220, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  damage: 0
+--- !u!136 &7822401987229094605
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3786935926152654625}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 1.0868229
+  m_Height: 2.173646
+  m_Direction: 1
+  m_Center: {x: 0, y: 1.0401311, z: 0}
 --- !u!1 &7361901775906864878
 GameObject:
   m_ObjectHideFlags: 0

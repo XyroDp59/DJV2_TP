@@ -4,6 +4,7 @@ using UnityEngine;
 public class EnnemiController : MonoBehaviour
 {
     [SerializeField] float speed;
+    private int score;
     [SerializeField] Transform mesh;
     [SerializeField] EnemyData data;
     Health health;
@@ -15,7 +16,8 @@ public class EnnemiController : MonoBehaviour
     {
         mover = GetComponent<Mover>();
         health = GetComponent<Health>();
-        //damage = GetComponent<Damage>();
+        damage = GetComponent<Damage>();
+        health.Die.AddListener(Death);
         Debug.Log(gameObject.name);
         Debug.Assert(data != null);
 
@@ -26,7 +28,8 @@ public class EnnemiController : MonoBehaviour
     {
         speed = data.speed;
         health.SetMaxHealth(data.health);
-        //damage.SetDamage(data.damage);
+        damage.SetDamage(data.damage);
+        score = data.score;
     }
 
     // Update is called once per frame
@@ -34,9 +37,14 @@ public class EnnemiController : MonoBehaviour
     {
         Vector3 playerPos = PlayerController.Singleton.transform.position;
         Vector3 dir = playerPos - transform.position;
-        float _speed = Vector3.Distance(playerPos, transform.position) > 1f ? speed : 0;
+        float _speed = Vector3.Distance(playerPos, transform.position) > 0.5f ? speed : 0;
         mover.Move(playerPos - transform.position, _speed);
 
         mover.RotateChildTowards(mesh, playerPos);
+    }
+
+    private void Death()
+    {
+        LevelController.Instance.AddToScore(score);
     }
 }

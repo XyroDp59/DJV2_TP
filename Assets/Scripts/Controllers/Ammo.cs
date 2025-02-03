@@ -22,4 +22,8 @@ public class Ammo : MonoBehaviour
     {
         mover.Move(dir, speed);
     }
+    private void OnTriggerEnter(Collider other)
+    {
+        Destroy(gameObject);
+    }
 }

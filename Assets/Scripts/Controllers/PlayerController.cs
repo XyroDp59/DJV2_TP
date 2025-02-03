@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-
+[RequireComponent(typeof(Health))]
 [RequireComponent(typeof(Mover))]
 public class PlayerController : MonoBehaviour
 {
@@ -11,11 +11,13 @@ public class PlayerController : MonoBehaviour
     [SerializeField] Weapon weapon;
     public static PlayerController Singleton;
     private Mover mover;
+    public Health health;
 
     // Start is called before the first frame update
     void Awake()
     {
         mover = GetComponent<Mover>();
+        health = GetComponent<Health>();
         Singleton = this;
     }
 

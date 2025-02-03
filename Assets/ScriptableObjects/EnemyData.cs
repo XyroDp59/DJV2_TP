@@ -12,5 +12,6 @@ public class EnemyData : ScriptableObject
 
     public float damage = 1f;
 
-    // This class could have many other vehicle parameters, such as Turning Radius, Range, Damage etc
+    public int score = 1;
+
 }

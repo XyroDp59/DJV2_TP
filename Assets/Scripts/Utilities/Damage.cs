@@ -15,9 +15,18 @@ public class Damage : MonoBehaviour
     {
         Health h;
         if(other.TryGetComponent(out h)){
-            Debug.Log(other.gameObject.name + " : " + h.AddHealth(-1 * damage));
+            h.AddHealth(-1*damage);
+            return;
         }
-        Destroy(gameObject);
+    }
+    private void OnCollisionEnter(Collision collision)
+    {
+        Health h; Damage d;
+        if (collision.gameObject.TryGetComponent(out h))
+        {
+            h.AddHealth(-1 * damage);
+            return;
+        }
     }
 
 }

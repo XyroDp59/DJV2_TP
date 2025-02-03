@@ -355,6 +355,50 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 5541036623202182641, guid: b7a6b287660b3554db794d2e7b38c60b, type: 3}
   m_PrefabInstance: {fileID: 9107378475847047908}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1311877013
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1311877015}
+  - component: {fileID: 1311877014}
+  m_Layer: 0
+  m_Name: LevelController
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1311877014
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1311877013}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 093c48842bc88384f820fa2bb74fcf30, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!4 &1311877015
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1311877013}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -15.01388, y: 12.058831, z: -41.58484}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1593093377 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 5838374885011194236, guid: b7a6b287660b3554db794d2e7b38c60b, type: 3}
@@ -622,6 +666,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 547994477447080063, guid: b7a6b287660b3554db794d2e7b38c60b, type: 3}
+      propertyPath: maxHealth
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 1761735519536197894, guid: b7a6b287660b3554db794d2e7b38c60b, type: 3}
       propertyPath: weapon
       value: 
@@ -749,3 +797,4 @@ SceneRoots:
   - {fileID: 1728673733490160916}
   - {fileID: 42109878741080436}
   - {fileID: 479993248}
+  - {fileID: 1311877015}
