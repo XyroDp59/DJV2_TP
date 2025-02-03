@@ -1,27 +1,47 @@
 using UnityEngine;
+using UnityEngine.Events;
 
 [RequireComponent(typeof(Mover))]
 public class EnnemiController : MonoBehaviour
 {
+    [Header("Components")]
+    Health health;
+    Damage damage;
+    Mover mover;
+    AudioSource source;
+
+    [Header("Misc")]
     [SerializeField] float speed;
     private int score;
     [SerializeField] Transform mesh;
     [SerializeField] EnemyData data;
-    Health health;
-    Damage damage;
-    private Mover mover;
+    [SerializeField] AudioClip hurtSFX;
 
-    // Start is called before the first frame update
+
+
     void Awake()
     {
         mover = GetComponent<Mover>();
         health = GetComponent<Health>();
         damage = GetComponent<Damage>();
+        source = GetComponent<AudioSource>();
         health.Die.AddListener(Death);
+        health.OnTakeDamage.AddListener(PlayHurtSFX);
         Debug.Log(gameObject.name);
         Debug.Assert(data != null);
 
         LoadFromData();
+    }
+
+    private void PlaySFX(AudioClip sfx)
+    {
+        source.clip = sfx;
+        source.Play();
+    }
+
+    private void PlayHurtSFX()
+    {
+        PlaySFX(hurtSFX);
     }
 
     private void LoadFromData()

@@ -12,6 +12,10 @@ PrefabInstance:
       propertyPath: data
       value: 
       objectReference: {fileID: 11400000, guid: 1c247e91d39c6934db7360f01b3c1eab, type: 2}
+    - target: {fileID: 296744629465696684, guid: 7dc2d9e44fa27584d9398a0215aa506b, type: 3}
+      propertyPath: hurtSFX
+      value: 
+      objectReference: {fileID: 8300000, guid: 778b096b1321b9c42863b2ceb0379c65, type: 3}
     - target: {fileID: 2334863039754096830, guid: 7dc2d9e44fa27584d9398a0215aa506b, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 

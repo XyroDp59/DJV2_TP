@@ -7,11 +7,13 @@ public class LevelController : MonoBehaviour
 {
     int score;
     public static LevelController Instance;
+    private ScoreUI scoreUI;
 
     private void Awake()
     {
         if(Instance == null) Instance = this;
         else Destroy(gameObject);
+        scoreUI = GetComponent<ScoreUI>();
     }
 
     private void Start()
@@ -21,6 +23,7 @@ public class LevelController : MonoBehaviour
     public int AddToScore(int s)
     {
         score += s;
+        scoreUI.UpdateScoreUI(score);
         return score;
     }
 
