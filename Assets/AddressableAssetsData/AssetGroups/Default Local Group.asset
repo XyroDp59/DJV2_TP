@@ -16,31 +16,7 @@ MonoBehaviour:
   m_Data:
     m_SerializedData: []
   m_GUID: dfa0ea39c7478694f998c0d2f011c37d
-  m_SerializeEntries:
-  - m_GUID: 09d58c3f93aa22840881bb6a74363c05
-    m_Address: Assets/Ennemi/Enemy 2 slow/Slow_ennemy.prefab
-    m_ReadOnly: 0
-    m_SerializedLabels:
-    - Enemy
-    FlaggedDuringContentUpdateRestriction: 0
-  - m_GUID: 208c03b4a70ea3248b27cb6549853f71
-    m_Address: Assets/Ennemi/Enemy 1 Mid/Ennemi Mid.prefab
-    m_ReadOnly: 0
-    m_SerializedLabels:
-    - Enemy
-    FlaggedDuringContentUpdateRestriction: 0
-  - m_GUID: 79eb305cbeae4d844b8e8c6f96d9602b
-    m_Address: Assets/Ennemi/Enemy 4 fast/Ennemi Fast.prefab
-    m_ReadOnly: 0
-    m_SerializedLabels:
-    - Enemy
-    FlaggedDuringContentUpdateRestriction: 0
-  - m_GUID: 7d91f45fc95aecb4b8927b44cdc6a900
-    m_Address: Assets/Ennemi/Enemy 3 Bulk/Ennemi Bulk.prefab
-    m_ReadOnly: 0
-    m_SerializedLabels:
-    - Enemy
-    FlaggedDuringContentUpdateRestriction: 0
+  m_SerializeEntries: []
   m_ReadOnly: 0
   m_Settings: {fileID: 11400000, guid: 93c862a385227234585263f5c14220af, type: 2}
   m_SchemaSet:
