@@ -36,7 +36,7 @@ public class EnnemiController : MonoBehaviour
     private void PlaySFX(AudioClip sfx)
     {
         source.clip = sfx;
-        source.Play();
+        if(source.isActiveAndEnabled) source.Play();
     }
 
     private void PlayHurtSFX()

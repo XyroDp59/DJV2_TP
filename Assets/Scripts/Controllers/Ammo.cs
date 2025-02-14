@@ -13,14 +13,14 @@ public class Ammo : MonoBehaviour
     void Awake()
     {
         mover = GetComponent<Mover>();
-        source.Play();
+        if (source.isActiveAndEnabled) source.Play();
     }
 
     private void OnDestroy()
     {
         source.transform.SetParent(transform.parent, true);
-        source.Play();
-        Destroy(source.gameObject, source.clip.length);
+        if(source.isActiveAndEnabled) source.Play();
+        Destroy(source.gameObject, source.clip.length +1f);
     }
 
     public void SetSpeedAndDir(float speed, Vector3 dir)

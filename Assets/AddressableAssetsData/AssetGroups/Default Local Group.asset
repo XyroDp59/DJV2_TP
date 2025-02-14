@@ -22,6 +22,16 @@ MonoBehaviour:
     m_ReadOnly: 0
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: b7a6b287660b3554db794d2e7b38c60b
+    m_Address: Assets/Character/Character.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: c42275b68ba5d2440a151a3a8b38512f
+    m_Address: Assets/Ennemi/Enemy 5 God/Grunt-Robot-1.wav
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
   m_ReadOnly: 0
   m_Settings: {fileID: 11400000, guid: 93c862a385227234585263f5c14220af, type: 2}
   m_SchemaSet:

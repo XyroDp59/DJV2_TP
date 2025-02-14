@@ -1,0 +1,31 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bbb281ee3bf0b054c82ac2347e9e782c, type: 3}
+  m_Name: EnemyPackC
+  m_EditorClassIdentifier: 
+  m_GroupName: EnemyPackC
+  m_Data:
+    m_SerializedData: []
+  m_GUID: 7e9b91d94edf74140b96c273a03f9184
+  m_SerializeEntries:
+  - m_GUID: af50dfa8671b94349864ecd1a413088b
+    m_Address: Assets/Ennemi/Enemy 5 God/Ennemi 5 God Variant.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Enemy
+    FlaggedDuringContentUpdateRestriction: 0
+  m_ReadOnly: 0
+  m_Settings: {fileID: 11400000, guid: 93c862a385227234585263f5c14220af, type: 2}
+  m_SchemaSet:
+    m_Schemas:
+    - {fileID: 11400000, guid: 22b2f36ddcfcc7e4c8694bb65adc3155, type: 2}
+    - {fileID: 11400000, guid: 1b0b0920acc15794d827e1b807ef21f5, type: 2}
